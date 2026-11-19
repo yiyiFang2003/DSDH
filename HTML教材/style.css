@@ -243,6 +243,22 @@ a:hover {
   background: #edf2f1;
 }
 
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gtable.auto-fit {
+  table-layout: fixed;
+}
+
+.gtable.auto-fit th,
+.gtable.auto-fit td {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 pre.code {
   max-width: 100%;
   overflow-x: auto;
@@ -364,5 +380,9 @@ pre.code {
   .gtable {
     display: block;
     overflow-x: auto;
+  }
+
+  .gtable.auto-fit {
+    min-width: 720px;
   }
 }
